@@ -14,6 +14,10 @@ class MainActivity : ComponentActivity() {
             ListProgrammingLanguageComposeTheme {
                 Surface(color = MaterialTheme.colors.background) {
 
+                    val programmingLanguageList = ProgrammingLanguageListProvider.programmingLanguageList
+                    ProgrammingLanguageListScreen(
+                        programmingLanguageList = programmingLanguageList
+                    )
                 }
             }
         }
